@@ -15,6 +15,8 @@ const handleUserInput = function(key) {
       connection.write('Move: right');
     } else if (key === 's') {
       connection.write('Move: down');
+    } else if (key === 'b') {
+      connection.write('Say: BOOTY')
     }
   }
 
@@ -28,5 +30,6 @@ const setupInput = function(conn) {
   return stdin
 
 }
+
 
 module.exports = setupInput;
